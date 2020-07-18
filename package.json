@@ -1,18 +1,18 @@
 {
-  "name": "vue-plotly",
+  "name": "@jcarrus/vue-plotly-basic",
   "version": "1.1.0",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve ./example/main.js --open",
-    "build": "vue-cli-service build --name vue-plotly --entry ./src/index.js --target lib",
+    "build": "vue-cli-service build --name vue-plotly-basic --entry ./src/index.js --target lib",
     "test:unit": "vue-cli-service test:unit --coverage",
     "lint": "vue-cli-service lint --fix",
     "build:doc": "vue-cli-service build --entry ./example/main.js --dest docs --mode development",
     "prepublishOnly": "npm run lint && npm run build && npm run build:doc",
     "test:coverage": "vue-cli-service test:unit --coverage --verbose && codecov"
   },
-  "main": "dist/vue-plotly.umd.js",
-  "module": "dist/vue-plotly.common.min.js",
+  "main": "dist/vue-plotly-basic.umd.js",
+  "module": "dist/vue-plotly-basic.common.min.js",
   "files": [
     "dist/*.css",
     "dist/*.map",
@@ -58,5 +58,20 @@
     "vue",
     "component"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "description": "<p align=\"center\"><img width=\"140\"src=\"https://raw.githubusercontent.com/David-Desmaisons/vue-plotly/master/example/assets/logo.png\"></p>",
+  "directories": {
+    "doc": "docs",
+    "example": "example",
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcarrus/vue-plotly-basic.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/jcarrus/vue-plotly-basic/issues"
+  },
+  "homepage": "https://github.com/jcarrus/vue-plotly-basic#readme"
 }
